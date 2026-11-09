@@ -22,12 +22,15 @@
     </MudCardContent>
     <MudCardActions>
         <MudStack Row="true" Spacing="2">
-            @if (glossaryRequest?.Status == Enums.GlossaryRequestStatuses.Sent)
+            @if (AuthService.CurrentUser?.IsAdmin == true)
             {
-                <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="MarkAsAccepted">Принять</MudButton>
-                <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="MarkAsRejected">Отклонить</MudButton>
+                @if (glossaryRequest?.Status == Enums.GlossaryRequestStatuses.Sent)
+                {
+                    <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="MarkAsAccepted">Принять</MudButton>
+                    <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="MarkAsRejected">Отклонить</MudButton>
+                }
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" OnClick="GoBack">Назад</MudButton>
             }
-            <MudButton Variant="Variant.Outlined" Color="Color.Default" OnClick="GoBack">Назад</MudButton>
         </MudStack>
     </MudCardActions>
 </MudCard>
