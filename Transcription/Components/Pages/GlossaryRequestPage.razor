@@ -1,0 +1,52 @@
+﻿@page "/glossary-request"
+@using Transcription.Services
+@inject AuthService AuthService
+@inject AppDbContext DbContext
+
+<MudText Typo="Typo.h4" Class="mb-4">Заявка на внесение термина</MudText>
+
+@if (showSuccessMessage)
+{
+    <MudAlert Severity="Severity.Success" Class="mb-4">Данные отправлены</MudAlert>
+}
+
+<EditForm Model="glossaryRequest" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+
+    <MudStack Spacing="3">
+        <MudTextField T="string" @bind-Value="glossaryRequest.Term"
+                      Label="Внесите термин"
+                      Variant="Variant.Outlined"
+                      For="() => glossaryRequest.Term" />
+
+        <MudTextField T="string" @bind-Value="glossaryRequest.Description"
+                      Label="Внесите описание"
+                      Variant="Variant.Outlined"
+                      Lines="3"
+                      For="() => glossaryRequest.Description" />
+
+        <div>
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">
+                Отправить
+            </MudButton>
+        </div>
+    </MudStack>
+</EditForm>
+
+@code {
+    private GlossaryRequest glossaryRequest = new();
+    private bool showSuccessMessage = false;
+
+    protected async Task HandleValidSubmit()
+    {
+        if (AuthService.CurrentUser == null) return;
+
+        glossaryRequest.UserId = AuthService.CurrentUser.Id;
+        DbContext.GlossaryRequests.Add(glossaryRequest);
+        await DbContext.SaveChangesAsync();
+
+        showSuccessMessage = true;
+
+        glossaryRequest = new();
+    }
+}

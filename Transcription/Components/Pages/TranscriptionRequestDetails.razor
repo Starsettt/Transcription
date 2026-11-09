@@ -1,0 +1,109 @@
+﻿@page "/transcription-request-details/{Id:int}"
+@using Transcription.Models
+@using Microsoft.EntityFrameworkCore
+@using Transcription.Services
+@inject AppDbContext DbContext
+@inject AuthService AuthService
+@inject NavigationManager navigationManager
+
+@if (transcriptionRequest == null)
+{
+    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+}
+else
+{
+    <MudCard Elevation="2">
+        <MudCardContent>
+            <MudText Typo="Typo.h4" Class="mb-4">№ заявки: @transcriptionRequest.Id</MudText>
+
+            <MudStack Spacing="2">
+                <MudText><strong>Тип заявки:</strong> @RequestTypeToNormal(transcriptionRequest.RequestType)</MudText>
+
+                @if (transcriptionRequest.ProtocolVariant.HasValue)
+                {
+                    <MudText><strong>Вариант протокола:</strong> @ProtocolVariantToNormal(transcriptionRequest.ProtocolVariant)</MudText>
+                }
+
+                <MudStack Spacing="1" Class="mb-4">
+                    <MudText Typo="Typo.body1">
+                        <strong>Количество спикеров:</strong> @(transcriptionRequest.SpeakersCount?.ToString() ?? "Не указано")
+                    </MudText>
+                </MudStack>
+
+                <MudStack Spacing="1" Class="mb-4">
+                    <MudText Typo="Typo.body1">
+                        <strong>Список спикеров:</strong> @(transcriptionRequest.SpeakersList ?? "Не указано")
+                    </MudText>
+                </MudStack>
+                <MudText><strong>Статус заявки:</strong> @(transcriptionRequest.Status == Enums.TranscriptionRequestStatuses.Sent ? "Отправлено" : "Выполнено")</MudText>
+                <MudText><strong>Дата создания:</strong> @(transcriptionRequest.CreatedAt.ToString("dd.MM.yyyy HH:mm"))</MudText>
+
+                @if (!string.IsNullOrEmpty(transcriptionRequest.FilePath))
+                {
+                    <MudText>
+                        <strong>Файл:</strong>
+                        <MudLink Href="@transcriptionRequest.FilePath" Target="_blank">Скачать</MudLink>
+                    </MudText>
+                }
+            </MudStack>
+        </MudCardContent>
+        <MudCardActions>
+            <MudStack Row="true" Spacing="2">
+                @if (AuthService.CurrentUser?.IsAdmin == true)
+                {
+                    @if (transcriptionRequest.Status == Enums.TranscriptionRequestStatuses.Sent)
+                    {
+                        <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="MarkAsDone">Выполнить</MudButton>
+                    }
+                }
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" OnClick="GoBack">Назад</MudButton>
+            </MudStack>
+        </MudCardActions>
+    </MudCard>
+}
+
+@code {
+    [Parameter] public int Id { get; set; }
+    public TranscriptionRequest? transcriptionRequest;
+
+    private async Task MarkAsDone()
+    {
+        if (AuthService.CurrentUser?.IsAdmin != true) return;
+        if (transcriptionRequest != null)
+        {
+            transcriptionRequest.Status = Enums.TranscriptionRequestStatuses.Done;
+            await DbContext.SaveChangesAsync();
+            await OnParametersSetAsync();
+        }
+    }
+
+    private void GoBack()
+    {
+        if(AuthService.CurrentUser.IsAdmin)
+            navigationManager.NavigateTo("/admin-panel");
+        else
+            navigationManager.NavigateTo("/my-requests");
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        transcriptionRequest = await DbContext.TranscriptionRequests.Include(r => r.User).FirstOrDefaultAsync(r => r.Id == Id);
+    }
+
+    private string ProtocolVariantToNormal(Enums.ProtocolVariants? variant) => variant switch
+    {
+        Enums.ProtocolVariants.Meeting => "Протокол встречи",
+        Enums.ProtocolVariants.VisionaryBoard => "Протокол наблюдательного совета",
+        Enums.ProtocolVariants.Testing => "Протокол тестирования",
+        Enums.ProtocolVariants.AssesmentProcedure => "Протокол процедуры оценивания",
+        _ => "Не указан"
+    };
+
+    private string RequestTypeToNormal(Enums.RequestTypes? type) => type switch
+    {
+        Enums.RequestTypes.TranscriptionPlusProtocol => "Транскрибация по записи + протокол",
+        Enums.RequestTypes.Transcription => "Транскрибация по записи",
+        Enums.RequestTypes.Protocol => "Протокол по имеющейся транскрибации",
+        _ => "Неизвестный тип"
+    };
+}

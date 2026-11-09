@@ -1,0 +1,79 @@
+﻿@page "/my-requests"
+@using Microsoft.EntityFrameworkCore
+@using Transcription.Models
+@using Transcription.Services
+@inject AuthService AuthService
+@inject AppDbContext DbContext
+@inject NavigationManager navigationManager
+
+<MudText Typo="Typo.h4" Class="mb-4">Мои заявки</MudText>
+
+@if (transcriptionRequests == null)
+{
+    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+}
+else if (!transcriptionRequests.Any() && !glossaryRequests.Any())
+{
+    <MudText Typo="Typo.body1">У вас пока нет заявок</MudText>
+}
+else
+{
+    <MudText Typo="Typo.h5" Class="mt-4 mb-2">Заявки на транскрибацию</MudText>
+    <MudTable Items="transcriptionRequests" Hover="true" Breakpoint="Breakpoint.Sm" Elevation="2">
+        <HeaderContent>
+            <MudTh>Номер</MudTh>
+            <MudTh>Тип</MudTh>
+            <MudTh>Кол-во спикеров</MudTh>
+            <MudTh>Спикеры</MudTh>
+            <MudTh>Дата</MudTh>
+            <MudTh>Действие</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>@context.Id</MudTd>
+            <MudTd>@context.RequestType</MudTd>
+            <MudTd>@context.SpeakersCount</MudTd>
+            <MudTd>@(context.SpeakersList ?? "Не указаны")</MudTd>
+            <MudTd>@context.CreatedAt.ToString("dd.MM.yyyy HH:mm")</MudTd>
+            <MudTd>
+                <MudButton Href="@($"/transcription-request-details/{context.Id}")" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small">Подробнее</MudButton>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+
+    <MudText Typo="Typo.h5" Class="mt-6 mb-2">Заявки в глоссарий</MudText>
+    <MudTable Items="glossaryRequests" Hover="true" Breakpoint="Breakpoint.Sm" Elevation="2">
+        <HeaderContent>
+            <MudTh>Номер</MudTh>
+            <MudTh>Термин</MudTh>
+            <MudTh>Описание</MudTh>
+            <MudTh>Дата</MudTh>
+            <MudTh>Действие</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>@context.Id</MudTd>
+            <MudTd>@context.Term</MudTd>
+            <MudTd>@context.Description</MudTd>
+            <MudTd>@context.CreatedAt.ToString("dd.MM.yyyy HH:mm")</MudTd>
+            <MudTd>
+                <MudButton Href="@($"/glossary-request-details/{context.Id}")" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small">Подробнее</MudButton>
+            </MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+@code {
+    private List<TranscriptionRequest> transcriptionRequests = new();
+    private List<GlossaryRequest> glossaryRequests = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (AuthService.CurrentUser == null)
+        {
+            navigationManager.NavigateTo("/login");
+            return;
+        }
+
+        transcriptionRequests = await DbContext.TranscriptionRequests.Where(r => r.UserId == AuthService.CurrentUser.Id).OrderByDescending(r => r.CreatedAt).ToListAsync();
+        glossaryRequests = await DbContext.GlossaryRequests.Where(r => r.UserId == AuthService.CurrentUser.Id).OrderByDescending(r => r.CreatedAt).ToListAsync();
+    }
+}

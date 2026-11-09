@@ -1,0 +1,154 @@
+﻿@page "/transcription-request"
+@using Transcription.Models
+@using Transcription.Services
+@inject AppDbContext DbContext
+@inject AuthService AuthService
+@inject NavigationManager navigationManager
+
+<MudText Typo="Typo.h4" Class="mb-4">Создание заявки на транскрибацию</MudText>
+
+<EditForm Model="transcriptionRequest" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    
+    <MudStack Spacing="4">
+        <MudSelect T="Enums.RequestTypes?" @bind-Value="transcriptionRequest.RequestType" Label="Выберите тип заявки" Variant="Variant.Outlined" For="() => transcriptionRequest.RequestType">
+            <MudSelectItem T="Enums.RequestTypes?" Value="@Enums.RequestTypes.TranscriptionPlusProtocol">Транскрибация по записи + протокол</MudSelectItem>
+            <MudSelectItem T="Enums.RequestTypes?" Value="@Enums.RequestTypes.Transcription">Транскрибация по записи</MudSelectItem>
+            <MudSelectItem T="Enums.RequestTypes?" Value="@Enums.RequestTypes.Protocol">Протокол по имеющейся транскрибации</MudSelectItem>
+        </MudSelect>
+
+        @if (transcriptionRequest.RequestType == Enums.RequestTypes.TranscriptionPlusProtocol ||
+             transcriptionRequest.RequestType == Enums.RequestTypes.Protocol)
+        {
+            <MudSelect T="Enums.ProtocolVariants?" @bind-Value="transcriptionRequest.ProtocolVariant" Label="Вариант протокола" Variant="Variant.Outlined">
+                <MudSelectItem T="Enums.ProtocolVariants?" Value="@Enums.ProtocolVariants.Meeting">Протокол встречи</MudSelectItem>
+                <MudSelectItem T="Enums.ProtocolVariants?" Value="@Enums.ProtocolVariants.VisionaryBoard">Протокол наблюдательного совета</MudSelectItem>
+                <MudSelectItem T="Enums.ProtocolVariants?" Value="@Enums.ProtocolVariants.Testing">Протокол тестирования</MudSelectItem>
+                <MudSelectItem T="Enums.ProtocolVariants?" Value="@Enums.ProtocolVariants.AssesmentProcedure">Протокол процедуры оценки</MudSelectItem>
+            </MudSelect>
+
+            @if (!string.IsNullOrEmpty(protocolErrorMessage))
+            {
+                <MudAlert Severity="Severity.Error" Dense="true">@protocolErrorMessage</MudAlert>
+            }
+        }
+
+        <MudNumericField T="int?" @bind-Value="transcriptionRequest.SpeakersCount"
+                         Label="Введите количество спикеров"
+                         Variant="Variant.Outlined"
+                         HelperText="Заполните для улучшения качества транскрибации" />
+
+        <MudTextField T="string" @bind-Value="transcriptionRequest.SpeakersList"
+                      Label="Введите список спикеров"
+                      Variant="Variant.Outlined"
+                      HelperText="Заполните для улучшения качества транскрибации" />
+
+        <MudFileUpload T="IBrowserFile" FilesChanged="HandleFileSelected" Accept=".mp3,.wav,.m4a,.mp4,.doc,.docx,.txt">
+            <ActivatorContent>
+                <MudButton Variant="Variant.Outlined" Color="Color.Primary" HtmlTag="label">
+                    Прикрепить файл
+                </MudButton>
+            </ActivatorContent>
+        </MudFileUpload>
+
+        @if (selectedFile != null)
+        {
+            <MudText Typo="Typo.caption" Color="Color.Success">
+                Выбран файл: @selectedFile.Name (@(Math.Round((double)selectedFile.Size / 1024 / 1024, 2)) МБ)
+            </MudText>
+        }
+
+        @if (!string.IsNullOrEmpty(fileErrorMessage))
+        {
+            <MudAlert Severity="Severity.Error" Dense="true">@fileErrorMessage</MudAlert>
+        }
+
+        <div>
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large">Отправить</MudButton>
+        </div>
+    </MudStack>
+</EditForm>
+
+@code {
+    private Models.TranscriptionRequest transcriptionRequest = new();
+    private IBrowserFile? selectedFile;
+    private string? fileErrorMessage;
+    private string? protocolErrorMessage;
+
+    private void HandleFileSelected(IBrowserFile? file)
+    {
+        fileErrorMessage = null;
+
+        if (file == null)
+        {
+            selectedFile = null;
+            return;              
+        }
+
+        long maxFileSize = 50 * 1024 * 1024;
+        if (file.Size > maxFileSize)
+        {
+            fileErrorMessage = "Файл слишком большой. Максимум 50 МБ.";
+            selectedFile = null;
+            return;
+        }
+
+        var allowedExtensions = new[] { ".mp3", ".wav", ".m4a", ".mp4", ".doc", ".docx", ".txt" };
+        var extension = Path.GetExtension(file.Name).ToLower();
+        if (!allowedExtensions.Contains(extension))
+        {
+            fileErrorMessage = "Недопустимый формат файла.";
+            selectedFile = null;
+            return;
+        }
+
+        selectedFile = file;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (AuthService.CurrentUser == null)
+        {
+            navigationManager.NavigateTo("/login");
+            return;
+        }
+
+        protocolErrorMessage = null;
+
+        bool isProtocolNeed = transcriptionRequest.RequestType == Enums.RequestTypes.TranscriptionPlusProtocol ||
+                              transcriptionRequest.RequestType == Enums.RequestTypes.Protocol;
+
+        if (isProtocolNeed && !transcriptionRequest.ProtocolVariant.HasValue)
+        {
+            protocolErrorMessage = "Выберите вариант протокола.";
+            return;
+        }
+
+        if (selectedFile == null)
+        {
+            fileErrorMessage = "Выберите файл.";
+            return; 
+        }
+
+        var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(selectedFile.Name);
+        var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+        Directory.CreateDirectory(folderPath);
+        var filePath = Path.Combine(folderPath, uniqueFileName);
+
+        byte[] fileBytes = new byte[selectedFile.Size];
+
+        await using (var stream = selectedFile.OpenReadStream(maxAllowedSize: 50 * 1024 * 1024))
+        {
+            await stream.ReadExactlyAsync(fileBytes);
+        }
+
+        await File.WriteAllBytesAsync(filePath, fileBytes);
+
+        transcriptionRequest.FilePath = $"/uploads/{uniqueFileName}";
+        transcriptionRequest.UserId = AuthService.CurrentUser.Id;
+        DbContext.TranscriptionRequests.Add(transcriptionRequest);
+        await DbContext.SaveChangesAsync();
+
+        navigationManager.NavigateTo("/my-requests");
+    }
+}

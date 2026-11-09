@@ -1,0 +1,46 @@
+﻿@page "/login"
+@using Transcription.Models
+@using Microsoft.EntityFrameworkCore
+@using Transcription.Services
+@inject AppDbContext DbContext
+@inject AuthService AuthService
+@inject NavigationManager NavManager
+
+<MudContainer MaxWidth="MaxWidth.ExtraSmall" Class="mt-16">
+    <MudPaper Elevation="3" Class="pa-6">
+        <MudText Typo="Typo.h5" Class="mb-4">Вход в систему</MudText>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <MudAlert Severity="Severity.Error" Class="mb-4">@errorMessage</MudAlert>
+        }
+
+        <EditForm Model="user" OnValidSubmit="HandleLogin">
+            <MudStack Spacing="3">
+                <MudTextField T="string" @bind-Value="user.Login" Label="Логин" Variant="Variant.Outlined" />
+                <MudTextField T="string" @bind-Value="user.Password" Label="Пароль" Variant="Variant.Outlined" InputType="InputType.Password" />
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" FullWidth="true">Войти</MudButton>
+            </MudStack>
+        </EditForm>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private User user = new();
+    private string? errorMessage;
+
+    private async Task HandleLogin()
+    {
+        var userObj = await DbContext.Users.FirstOrDefaultAsync(u => u.Login == user.Login && u.Password == user.Password);
+
+        if (userObj != null)
+        {
+            AuthService.Login(userObj);
+            NavManager.NavigateTo("/");
+        }
+        else
+        {
+            errorMessage = "Неверный логин или пароль";
+        }
+    }
+}

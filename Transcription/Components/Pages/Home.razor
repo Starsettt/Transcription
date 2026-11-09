@@ -1,0 +1,34 @@
+﻿@page "/"
+@using Transcription.Services
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+<PageTitle>Home</PageTitle>
+
+<MudText Typo="Typo.h3" Class="mb-4">Добро пожаловать!</MudText>
+
+<MudText Typo="Typo.body1" Class="mb-2">Вы находитесь в веб-интерфейсе для транскрибации аудио и видео файлов.</MudText>
+<MudText Typo="Typo.body1" Class="mb-2">Для использования сервиса вам необходимо авторизоваться в системе.</MudText>
+<MudText Typo="Typo.body1" Class="mb-6">Для просмотра ваших заявок перейдите в блок "Мои заявки"</MudText>
+
+<MudStack Row="true" Spacing="3">
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="GoToTranscription">Создать заявку на транскрибацию</MudButton>
+    <MudButton Variant="Variant.Outlined" Color="Color.Primary" OnClick="GoToGlossary">Создать заявку на внесение термина</MudButton>
+</MudStack>
+
+@code {
+    private void GoToTranscription()
+    {
+        if (AuthService.CurrentUser != null) 
+            NavigationManager.NavigateTo("/transcription-request");
+        else 
+            NavigationManager.NavigateTo("/login");
+    }
+
+    private void GoToGlossary()
+    {
+        if (AuthService.CurrentUser != null)
+            NavigationManager.NavigateTo("/glossary-request");
+        else 
+            NavigationManager.NavigateTo("/login");
+    }
+}

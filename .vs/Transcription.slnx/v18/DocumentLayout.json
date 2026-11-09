@@ -1,0 +1,471 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\loxtu\\source\\repos\\Transcription\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\adminpanel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\adminpanel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\glossaryrequestdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\glossaryrequestdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\glossaryrequestpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\glossaryrequestpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\myrequestspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\myrequestspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\transcriptionrequestdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\transcriptionrequestdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\pages\\transcriptionrequestpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\pages\\transcriptionrequestpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\models\\glossaryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\models\\glossaryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\models\\transcriptionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\models\\transcriptionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\reconnectmodal.razor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\reconnectmodal.razor.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\components\\layout\\reconnectmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\components\\layout\\reconnectmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|c:\\users\\loxtu\\source\\repos\\transcription\\transcription\\migrations\\20261108101459_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{399AF3C0-B30A-EE3E-70C9-BDBF91F0919D}|Transcription\\Transcription.csproj|solutionrelative:transcription\\migrations\\20261108101459_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TranscriptionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\TranscriptionRequest.cs",
+              "RelativeDocumentMoniker": "Transcription\\Models\\TranscriptionRequest.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\TranscriptionRequest.cs",
+              "RelativeToolTip": "Transcription\\Models\\TranscriptionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:28:01.914Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TranscriptionRequestDetails.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\TranscriptionRequestDetails.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\TranscriptionRequestDetails.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\TranscriptionRequestDetails.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\TranscriptionRequestDetails.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T17:03:43.339Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\.gitignore",
+              "RelativeDocumentMoniker": "Transcription\\.gitignore",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\.gitignore",
+              "RelativeToolTip": "Transcription\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-11-09T12:14:01.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T15:43:25.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GlossaryRequestPage.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\GlossaryRequestPage.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\GlossaryRequestPage.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\GlossaryRequestPage.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\GlossaryRequestPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T14:24:13.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlossaryRequestDetails.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T06:11:53.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T14:27:59.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPanel.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\AdminPanel.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\AdminPanel.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\AdminPanel.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\AdminPanel.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T15:07:50.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Program.cs",
+              "RelativeDocumentMoniker": "Transcription\\Program.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Program.cs",
+              "RelativeToolTip": "Transcription\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:22:38.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T09:06:58.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyRequestsPage.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\MyRequestsPage.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\MyRequestsPage.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\MyRequestsPage.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\MyRequestsPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T10:15:45.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotFound.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\NotFound.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\NotFound.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\NotFound.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\NotFound.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T14:27:55.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TranscriptionRequestPage.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\TranscriptionRequestPage.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\TranscriptionRequestPage.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\TranscriptionRequestPage.razor",
+              "RelativeToolTip": "Transcription\\Components\\Pages\\TranscriptionRequestPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T10:56:59.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\_Imports.razor",
+              "RelativeToolTip": "Transcription\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T09:23:29.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\App.razor",
+              "RelativeToolTip": "Transcription\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T11:14:39.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Routes.razor",
+              "RelativeToolTip": "Transcription\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T11:23:47.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Transcription\\Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\Enums.cs",
+              "RelativeToolTip": "Transcription\\Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:36:30.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GlossaryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\GlossaryRequest.cs",
+              "RelativeDocumentMoniker": "Transcription\\Models\\GlossaryRequest.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\GlossaryRequest.cs",
+              "RelativeToolTip": "Transcription\\Models\\GlossaryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:28:22.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Transcription\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Models\\User.cs",
+              "RelativeToolTip": "Transcription\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:27:42.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Transcription\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\AppDbContext.cs",
+              "RelativeToolTip": "Transcription\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T09:23:01.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\AuthService.cs",
+              "RelativeDocumentMoniker": "Transcription\\AuthService.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\AuthService.cs",
+              "RelativeToolTip": "Transcription\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-09T09:05:06.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T11:00:14.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-08T09:27:04.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwEkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T10:41:05.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-08T09:26:56.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ReconnectModal.razor.js",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\ReconnectModal.razor.js",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\ReconnectModal.razor.js",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\ReconnectModal.razor.js",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\ReconnectModal.razor.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-11-08T10:56:03.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReconnectModal.razor",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\ReconnectModal.razor",
+              "RelativeDocumentMoniker": "Transcription\\Components\\Layout\\ReconnectModal.razor",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Layout\\ReconnectModal.razor",
+              "RelativeToolTip": "Transcription\\Components\\Layout\\ReconnectModal.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-08T10:56:20.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20261108101459_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Migrations\\20261108101459_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Transcription\\Migrations\\20261108101459_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Migrations\\20261108101459_InitialCreate.cs",
+              "RelativeToolTip": "Transcription\\Migrations\\20261108101459_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T10:14:59.835Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
