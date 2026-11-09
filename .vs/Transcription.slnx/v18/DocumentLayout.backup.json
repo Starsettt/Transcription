@@ -148,8 +148,7 @@
               "ViewState": "AgIAAB4AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-08T17:03:43.339Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -195,7 +194,7 @@
               "RelativeDocumentMoniker": "Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
               "ToolTip": "C:\\Users\\loxtu\\source\\repos\\Transcription\\Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
               "RelativeToolTip": "Transcription\\Components\\Pages\\GlossaryRequestDetails.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-09T06:11:53.027Z",
               "EditorCaption": ""
@@ -234,8 +233,7 @@
               "RelativeToolTip": "Transcription\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T09:22:38.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T09:22:38.049Z"
             },
             {
               "$type": "Document",
